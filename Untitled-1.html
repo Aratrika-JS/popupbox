@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+        <div class="box">
+            <section class="pattern">
+                <div class="geeks">
+                    <div onclick="myFunction()">
+                        <button style="margin: 60px 99px auto 0;">Click me!<i class="fab fa-angellist"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    <div class="overlay" id="overlay"></div>
+    <div class="BOX">
+        <div class="content" id="content">
+            <div style="display: flex; ">
+                <i class="fas fa-gifts" id="icon"></i>
+                <i class="fas fa-times-circle" style="margin-left: 32%;" onclick="newFunction()"></i>
+            </div>
+            <hr>
+            <div style="margin-left: 150px;margin-top: 10px;" class="text">
+               
+                <h2 style="font-size: 40px;font-family: 'Limelight', cursive;text-shadow: 4px 4px 10px rgb(247, 246, 246);">Gift For You!</h2>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("content").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("content").style.zIndex = "4";
+        }
+        function newFunction() {
+            document.getElementById("content").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

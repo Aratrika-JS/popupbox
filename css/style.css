@@ -1,0 +1,139 @@
+*
+{
+   margin: 0 auto;
+}
+.box
+{
+   height: 187px;
+   width: 100%;
+   background-color: bisque;
+  
+}
+.geeks { 
+   padding: 200px; 
+   text-align: center;
+} 
+  
+section { 
+   width: 100%; 
+   min-height: 500px; 
+  
+} 
+.pattern { 
+   position: relative; 
+   background-color: crimson; 
+   background-image: linear-gradient(315deg, crimson 0%, rgb(197, 94, 115) 74%); 
+ 
+  
+} 
+  
+.pattern::before { 
+   content: ""; 
+   position: absolute; 
+   bottom: 0; 
+   left: 0; 
+   width: 100%; 
+   height: 219px; 
+   background: url(../img/wave.png); 
+   background-size: cover; 
+   background-repeat: no-repeat; 
+   animation: wavemove 1s;
+} 
+@keyframes wavemove
+{
+ 0%{
+    height: 233px;
+    width: 100%;
+ }
+ 25%{
+   height: 250px;
+   width: 100%;
+
+ }
+ 50%{
+   height: 260px;
+   width: 100%;
+ }
+ 75%{
+      height: 250px;
+      width: 100%;
+ }
+ 100%{
+    height: 233px;
+    width: 100%;
+ }
+ 
+}
+button
+{
+   margin: 20px auto auto 30px;
+   font-size: 40px;
+   border-radius: 20px ;
+   border: 4px solid rgb(241, 235, 238);
+   color: brown;
+}
+.overlay
+{
+   position: fixed;
+   display: none;
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 1; 
+}
+.content
+{
+   position: fixed;
+   height: 50%;
+   width: 40%;
+   margin: 0 auto auto 400px;
+   display: none;
+   z-index: 2;
+   background-color: rgb(248, 179, 208);
+   transform: translate(5%,-20%);
+   animation: mymove 0.5s;
+   box-shadow: 1px 4px 13px rgb(0, 0, 0);
+}
+.content:hover
+{
+   box-shadow: 2px 8px 20px black;
+}
+@keyframes mymove
+{
+   from
+   {
+      height: 20%;
+      width: 20%;
+      transform: translate(30%,40%);
+      overflow: hidden;
+   }
+   to{
+      height: 50%;
+      width: 40%;
+   }
+}
+#icon
+{
+   font-size: 139px;
+   margin-left: 181px;
+   margin-top: 40px;
+   animation: moveicon 0.5s;
+   color: rgba(209, 57, 82, 0.8);
+}
+@keyframes moveicon
+{
+   from
+   {
+      margin-left: 26%;
+      margin-bottom: 10px;
+   }
+   to{
+      margin-left: 32%;
+      margin-bottom: 0px;
+   }
+}
+
